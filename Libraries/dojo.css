@@ -1,0 +1,54 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+      
+  /* Fixed width container class that will "auto-center" itself */
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .btn {
+    background-color: #17a2b8;
+    box-shadow: 5px 5px black;
+}
+.nav{
+  background-color: #333333;
+  width: 100%;
+  padding: 10px;
+  padding-left: 50px;
+  display: flex;
+  color: aliceblue;
+  justify-content: space-between;
+  align-items: center
+}
+.nav-links{
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+  .row {
+    margin: 10px;
+    display:flex
+}
+  .col {
+    flex: 1;
+    background-color: aquamarine;
+    justify-content: space-around;
+}
+  .round{
+    border-radius: 100px;
+    background-color: aqua;
+    width: 50px;
+    border: white;
+}
+  .same-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;

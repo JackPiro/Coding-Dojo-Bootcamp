@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../Coda"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CodingDojo"
+	}
+}

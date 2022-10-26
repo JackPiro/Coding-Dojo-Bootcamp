@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam 1</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="page">
+        <div id="header">
+            <div id="top-header">
+                <div class="center">
+                    <div class="title">
+                        <img src="./assets/heart-light.png" alt="heart-icon" class="buffer">
+                        <h1>Pet Shelter</h1>
+                    </div>
+                    <div>
+                        <button class="directory">Find a Pet</button>
+                        <button class="directory">About</button>
+                        <button onclick="hideBtn(this)" class="top-head-button directory">Donate</button>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom-header">
+                <div class="center">
+                    <div class="drop-down-div">
+                        <p>I'm looking for a...</p>
+                        <div class="align">
+                            <img src="./assets/paw-light.png" alt="paw-icon" class="small-icon">
+                            <select name="animal-type" id="animal-type" class="drop-down bar">
+                                <option onclick="alertFunction1(this)" value="0" label="Any Pet">You have chosen All Pets</option>
+                                <option onchange="alertFunction2(this)" value="1" label="Dog">You have chosen dogs</option>
+                                <option onclick="alert('You have chosen cats')" value="2" label="Cat">You have chosen cats</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="drop-down-div">
+                        <p>In or near...</p>
+                        <div class="align">
+                            <img src="./assets/pin-light.png" alt="pin-drop" class="small-icon">
+                            <input type="text" class="bar" placeholder="City or Zip Code">
+                        </div>
+                    </div>
+                    <button class="low-head-button">Find your new best friend</button>
+                </div>
+            </div>
+        </div>
+        <div id="bottom-page">
+            <div class="boxes">
+                <div class="box">
+                    <img src="./assets/pepper.jpg" alt="Pepper" class="pet pepper">
+                    <div class="description">
+                        <h2>Pepper</h2>
+                        <p>Pepper is a slightly shy grey tabby, but she really loves showing<br> her human affection.</p>
+                    </div>
+                    <div class="likes-box">
+                        <div id="like-counter1">
+                            0 Petting(s)
+                        </div>
+                        <button onclick="addOne1()" class="btn pepper">Pet Pepper</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/bruce.jpg" alt="bruce" class="pet">
+                    <div class="description">
+                        <h2>Bruce</h2>
+                        <p>Bruce is a loyal companion. He loves long walks and cold weather.</p>
+                    </div>
+                    <div class="likes-box">
+                        <div id="like-counter2">
+                            0 Petting(s)
+                        </div>
+                        <button onclick="addOne2()" class="btn bruce">Pet Bruce</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./assets/oscar.jpg" alt="oscar" class="pet">
+                    <div class="description">
+                        <h2>Oscar</h2>
+                        <p>Oscar is bright, energetic, and friendly. He is looking for a good home.</p>
+                    </div>
+                    <div class="likes-box">
+                        <div  id="like-counter3">
+                            0 Petting(s)
+                        </div>
+                        <button onclick="addOne3()" class="btn oscar">Pet Oscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
