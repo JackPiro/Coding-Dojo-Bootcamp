@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="d-grid gap-3">
+        <form action="/edit_user_route" method="post">
+            <input type="hidden" name="id" value="{{ the_user_we_are_editing.id }}">
+            <div class="p-2 bg-light border">
+                <label for="fname">New First Name:</label>
+                <input type="text" name="fname" value="{{ the_user_we_are_editing.first_name }}">
+            </div>
+            <div class="p-2 bg-light border">
+                <label for="lname">New Last Name:</label>
+                <input type="text" name="lname" value="{{ the_user_we_are_editing.last_name }}">
+            </div>
+            <div class="p-2 bg-light border">
+                <label for="email">New Email:</label>
+                <input type="text" name="email" value="{{ the_user_we_are_editing.email }}">
+            </div>
+            <button>Submit</button>
+        </form>
+        <a href="/">Back</a>
+    </div>
+</body>
+</html>

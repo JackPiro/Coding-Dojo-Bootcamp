@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css) }}">
+    <title>Checkerboard</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>chess</h1>
+        <div class="row-wrapper">
+            {% while num_columns > 0: %}
+                {% if num_columns % 2 = 0: %}
+                    <div class="black" class="column">
+                
+                    </div>
+                {% else: %}
+                    <div class="red">
+        
+                    </div>
+                {% num_columns = num_columns - 1 %}
+                {% for num_rows in range(0,num_rows): %}
+                    {% if num_rows % 2 = 0: %}
+                        <div class="red" class="row">
+                        
+                        </div>
+                    {% else: %}
+                        <div class="black">
+                
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            {% endwhile %}
+        </div>
+    </div>
+</body>
+</html>

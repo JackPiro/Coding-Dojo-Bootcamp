@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\sammy\CodingDojo\Python\flask_mysql\dojos_and_ninjas\flask_app\static\css\style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/create_dojo" method="post">
+            <label for="dojo_name">Create New Dojo</label>
+            <input type="text" name="dojo_name">
+            <button>Create</button>
+        </form>
+    </div>
+    <div class="container">
+        <h1>all dojos</h1>
+        {% for one_dojo in dojos %}
+        <a href="/dojos_ninjas/{{ one_dojo.id }}">{{ one_dojo.name }}</a>
+        <a href="/delete_dojo/{{ one_dojo.id }}">Delete</a>
+        {% endfor %}
+    </div>
+</body>
+</html>
